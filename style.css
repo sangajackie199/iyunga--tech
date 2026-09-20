@@ -258,8 +258,8 @@ h1{
     }
     nav ul {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px 0;
+        gap: 25px;
+        padding: 25px 0px;
     }
     nav ul li{
         margin: 0;
