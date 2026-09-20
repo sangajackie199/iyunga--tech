@@ -127,7 +127,7 @@ label {
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
-    min-height: 200px;
+    min-height: 20px;
     margin: 15px;
 
 }
@@ -162,9 +162,10 @@ label {
 .images{
     display: block;
     margin: auto;
-    width: 900px;
+    width: 100%;
     min-height: 90px;
     border-radius: 100%;
+    height: auto;
     object-fit: cover;
 }
 .hero{
@@ -194,6 +195,28 @@ h1{
     font-size: 50px;
 }ul{
     font-weight: bold;
+}
+@media (max-width:700px) {
+    img {
+        max: width 90%;
+        height: auto;
+        margin: auto;
+    }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    h1 {
+        font-size: 28px;
+
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+    }
+
 }
 
 
