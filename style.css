@@ -127,7 +127,7 @@ label {
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
-    min-height: 20px;
+    min-height: 200px;
     margin: 15px;
 
 }
@@ -140,7 +140,7 @@ label {
     transition: 3s;
 }
 .about-box {
-    animation: rotateBox 5s infinite;
+    animation: rotateBox 5s ;
 }
 @keyframes rotateBox {
     from {
@@ -215,6 +215,11 @@ h1{
     }
     p{
         font-size: 16px;
+    }
+    .school-image {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
     }
 
 }
