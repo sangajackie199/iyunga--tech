@@ -221,6 +221,16 @@ h1{
         height: auto;
         margin: auto;
     }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .about-box {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
 
 }
 
