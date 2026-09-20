@@ -241,5 +241,21 @@ h1{
     }
     
 }
+@media (max-width:768px) {
+    .about-box {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        box-sizing: border-box;
+        padding: 20px;
+        overflow: visible;
+    }
+    .about-box p ,
+    .about-box h2 ,
+    .about-box h3 ,{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}
 
 
