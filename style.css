@@ -256,6 +256,19 @@ h1{
         overflow-wrap: break-word;
         word-wrap: break-word;
     }
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+    nav ul li{
+        margin: 0;
+    }
+    nav ul li a {
+        display: block;
+        padding: 8px 15px;
+        font-size: 16px;
+    }
 }
 
 
