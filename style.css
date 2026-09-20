@@ -256,15 +256,16 @@ h1{
         overflow-wrap: break-word;
         word-wrap: break-word;
     }
-    nav ul {
+    .main-nav ul {
         flex-direction: column;
-        gap: 25px;
+        gap: 25git add .
+        px;
         padding: 25px 0px;
     }
-    nav ul li{
+    .main-nav ul li{
         margin: 0;
     }
-    nav ul li a {
+    .main-nav ul li a {
         display: block;
         padding: 8px 15px;
         font-size: 16px;
