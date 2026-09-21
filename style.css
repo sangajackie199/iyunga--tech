@@ -140,7 +140,7 @@ label {
     transition: 3s;
 }
 .about-box {
-    animation: rotateBox 5s infinite;
+    animation: rotateBox 5s ;
 }
 @keyframes rotateBox {
     from {
@@ -162,9 +162,10 @@ label {
 .images{
     display: block;
     margin: auto;
-    width: 900px;
+    width: 100%;
     min-height: 90px;
     border-radius: 100%;
+    height: auto;
     object-fit: cover;
 }
 .hero{
@@ -195,6 +196,7 @@ h1{
 }ul{
     font-weight: bold;
 }
+<<<<<<< HEAD
 .box {
     height: 60px;
     width: 60px;
@@ -230,16 +232,89 @@ h1{
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+=======
+@media (max-width:700px) {
+    img {
+        max: width 90%;
+        height: auto;
+        margin: auto;
+    }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+>>>>>>> 4940869f93830d5d4c5aae4267523c4fc96dbf22
     }
     h1 {
         font-size: 28px;
 
     }
+<<<<<<< HEAD
     h2{
         font-size: 24px;
     }
     p {
         font-size: 16;
+=======
+    h2 {
+        font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .school-image {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .about-box  h3 {
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+}
+/* mobile responsive images */
+@media (max-width:768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-width:768px) {
+    .about-box {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        box-sizing: border-box;
+        padding: 20px;
+        overflow: visible;
+    }
+    .about-box p ,
+    .about-box h2 ,
+    .about-box h3 ,{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 25git add .
+        px;
+        padding: 25px 0px;
+    }
+    .main-nav ul li{
+        margin: 0;
+    }
+    .main-nav ul li a {
+        display: block;
+        padding: 8px 15px;
+        font-size: 16px;
+>>>>>>> 4940869f93830d5d4c5aae4267523c4fc96dbf22
     }
 }
 
