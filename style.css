@@ -195,5 +195,52 @@ h1{
 }ul{
     font-weight: bold;
 }
+.box {
+    height: 60px;
+    width: 60px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    
+    
+
+}
+.box{
+    height: 100px;
+    width: 200px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: flex;
+    
+
+
+}
+.boxes {
+    display: flex;
+    padding: 30px 50px;
+    gap: 30px;
+    justify-content: center;   
+}
+@media (max-width:768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 28px;
+
+    }
+    h2{
+        font-size: 24px;
+    }
+    p {
+        font-size: 16;
+    }
+}
 
 
