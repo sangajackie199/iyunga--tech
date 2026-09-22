@@ -196,7 +196,7 @@ h1{
 }ul{
     font-weight: bold;
 }
-<<<<<<< HEAD
+
 .box {
     height: 60px;
     width: 60px;
@@ -217,6 +217,7 @@ h1{
     background-color: white;
     border-radius: 30px;
     justify-content: flex;
+    font-size: 18px;
     
 
 
@@ -232,7 +233,7 @@ h1{
         margin: 0;
         padding: 0;
         overflow-x: hidden;
-=======
+
 @media (max-width:700px) {
     img {
         max: width 90%;
@@ -242,19 +243,18 @@ h1{
     .container {
         width: 100%;
         padding: 0 10px;
->>>>>>> 4940869f93830d5d4c5aae4267523c4fc96dbf22
+
     }
     h1 {
         font-size: 28px;
 
     }
-<<<<<<< HEAD
     h2{
         font-size: 24px;
     }
     p {
         font-size: 16;
-=======
+
     h2 {
         font-size: 24px;
     }
@@ -286,6 +286,7 @@ h1{
     }
     
 }
+
 @media (max-width:768px) {
     .about-box {
         width: 100%;
@@ -303,8 +304,7 @@ h1{
     }
     .main-nav ul {
         flex-direction: column;
-        gap: 25git add .
-        px;
+        gap: 25px;
         padding: 25px 0px;
     }
     .main-nav ul li{
@@ -314,8 +314,8 @@ h1{
         display: block;
         padding: 8px 15px;
         font-size: 16px;
->>>>>>> 4940869f93830d5d4c5aae4267523c4fc96dbf22
     }
 }
-
-
+.student-form {
+    display: none;
+}    

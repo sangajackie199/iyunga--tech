@@ -27,3 +27,10 @@ contactForm.addEventListener("submit", function (event) {
 
     contactForm.reset();
 });
+
+document.addEventListener("DOMContentLoaded",function() {
+    alert("Js imeona page ");
+})
+
+
+
