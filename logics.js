@@ -28,9 +28,15 @@ contactForm.addEventListener("submit", function (event) {
     contactForm.reset();
 });
 
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded",function() {
     alert("Js imeona page ");
 })
 
 
 
+=======
+document.getElementById("cteateStudentBtn").onclick = function() {
+    alert("create Student button inafanya kazi");
+};
+>>>>>>> e237d37 (update website)
