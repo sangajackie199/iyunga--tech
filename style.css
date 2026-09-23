@@ -554,18 +554,24 @@ table {
 h1 {
     text-align: center;
 }
-
-/* Center Back Home Link */
-
-body > a {
+/* Student Management section */
+main > nav {
     text-align: center;
-}
-#studentForm button {
-    display: block;
-    margin: 20px auto;
+    margin-top: 30px;
 }
 
-td button {
+main > nav a {
     display: inline-block;
-    margin: 5px
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main > section:last-of-type {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main > section:last-of-type button {
+    margin: 10px;
+    padding: 10px 20px;
 }

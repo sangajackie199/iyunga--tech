@@ -123,13 +123,20 @@ if (studentTableBody) {
             <td>${student.gender}</td>
             <td>${student.address}</td>
             <td>${student.phoneNumber}</td>
+
             <td>
-                <button onclick="editStudent(${index})">Edit</button>
-                <button onclick="deleteStudent(${index})">Delete</button>
+                <button onclick="editStudent(${index})">
+                    Edit
+                </button>
+
+                <button onclick="deleteStudent(${index})">
+                    Delete
+                </button>
             </td>
         `;
 
         studentTableBody.appendChild(row);
+
     });
 }
 
