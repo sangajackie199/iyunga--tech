@@ -67,8 +67,7 @@ button:hover {
     color: #e60ce6;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-}
-.main-nav a :hover {
+
 }
 
 .main-nav a:hover {
@@ -236,7 +235,7 @@ h1{
 
 @media (max-width:700px) {
     img {
-        max: width 90%;
+        max-width:90%;
         height: auto;
         margin: auto;
     }
@@ -298,7 +297,8 @@ h1{
     }
     .about-box p ,
     .about-box h2 ,
-    .about-box h3 ,{
+    .about-box h3 , {
+
         overflow-wrap: break-word;
         word-wrap: break-word;
     }
@@ -316,12 +316,3 @@ h1{
         font-size: 16px;
     }
 }
-<<<<<<< HEAD
-.student-form {
-    display: none;
-}    
-=======
-
-
-
->>>>>>> e237d37 (update website)
