@@ -1,10 +1,23 @@
+/* ================================
+   GENERAL
+================================ */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:rgb(163, 163, 226);
+    background-color: rgb(163, 163, 226);
     margin: 0;
     padding: 20px;
-    color:black;
+    color: black;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   HEADER
+================================ */
 
 .c {
     text-align: center;
@@ -13,44 +26,75 @@ body {
     background: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
+.c img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* ================================
+   HEADINGS
+================================ */
+
+h1,
+h2,
+h3 {
     color: #0e23e4;
     font-weight: bold;
 }
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
 
 button {
     background-color: #0056b3;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
-    transition: 3s;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: #e6be0e;
-    transition: 3s;
+    color: black;
+    transform: translateY(-2px);
 }
 
-/* Navigation */
+
+/* ================================
+   NAVIGATION
+================================ */
+
 .main-nav {
-    margin: 20px 0;
+    margin: 20px auto;
     background-color: aqua;
     padding: 15px;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 20px;
+    max-width: 900px;
     border-radius: 30px;
 }
 
 .main-nav ul {
     list-style: none;
     padding: 10px;
+    margin: 0;
     text-align: center;
 }
 
@@ -62,13 +106,13 @@ button:hover {
 .main-nav a {
     display: inline-block;
     text-decoration: none;
-    padding: 10px 50px;
+    padding: 10px 30px;
     background: #eee;
     color: #e60ce6;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-}
-.main-nav a :hover {
+    margin: 5px;
+    transition: 0.3s;
 }
 
 .main-nav a:hover {
@@ -76,246 +120,452 @@ button:hover {
     color: white;
 }
 
-/* SCHOOL IMAGE */
-.school-image {
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    text-align: center;
+    background: white;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.images {
+    display: block;
+    margin: 30px auto;
     width: 100%;
     max-width: 800px;
     height: auto;
-    display: block;
-    margin: 30px auto;
-    border-radius: 8px;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
-/* Forms */
+
+/* ================================
+   ABOUT
+================================ */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-box {
+    width: 350px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 3px solid wheat;
+    background-color: rgb(136, 120, 196);
+    border-radius: 10px;
+    text-align: center;
+    min-height: 200px;
+    margin: 15px;
+    transition: 0.5s;
+}
+
+.about-box h3 {
+    margin-bottom: 15px;
+}
+
+.about-box:hover {
+    background-color: #46a1dd;
+    transform: translateY(-5px);
+}
+
+.about-box p {
+    line-height: 1.6;
+}
+
+.about-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* ================================
+   FORMS
+================================ */
+
+form {
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 input,
-textarea {
+textarea,
+select {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 12px;
+    margin: 10px 0 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #0056b3;
 }
 
 label {
     font-weight: bold;
 }
 
-/* Academic list */
+
+/* ================================
+   ACADEMICS
+================================ */
+
+.academics {
+    background: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+}
+
 .academics li {
     margin: 10px 0;
+    font-weight: bold;
 }
 
-/* Footer */
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
 .site-footer {
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ================================
+   CREATE STUDENT
+================================ */
+
+#studentForm {
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+#studentForm h1 {
     text-align: center;
 }
-.about-container {
-    display: flex;
-    justify-content: center;
-    gap: 3opx;
-    flex-wrap: 20px;
 
-}
-.about-box {
-    width: 350px;
-    padding: 50px 50px;
-    box-shadow: #e6be0e;
-    border: 3px wheat;
-    background-color: rgb(136, 120, 196);
-    border-radius: 10px;
-    text-align: center;
-    box-sizing: border-box;
-    min-height: 200px;
-    margin: 15px;
-
-}
-.about-box h3 {
-    margin-bottom: 15px;
-
-}
-.about-box:hover{
-    background-color: #46a1dd;
-    transition: 3s;
-}
-.about-box {
-    animation: rotateBox 5s ;
-}
-@keyframes rotateBox {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-
-}
-.about-box p {
-    line-height: 1.6;
-}
-.about-box img {
-    width: 100px;
-    border-radius: 50%;
-    
-}
-.images{
+#saveStudent {
     display: block;
-    margin: auto;
-    width: 100%;
-    min-height: 90px;
-    border-radius: 100%;
-    height: auto;
-    object-fit: cover;
+    margin: 20px auto 0;
+    min-width: 180px;
 }
-.hero{
+
+
+/* ================================
+   VIEW STUDENT
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+    padding: 14px;
     text-align: center;
 }
-h1 , h2 ,p , a ,img , h3 , ul , li , form , .main-nav , .c , button{
-    animation: slideIn 3s ease-in-out;
+
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
 }
 
-@keyframes slideIn {
-        from{
-            transform: translateX(-100%);
-            opacity:0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 15px;
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-        }
+tbody tr:hover {
+    background-color: #dbeeff;
 }
-p {
-    color: black;
-    font-weight: bold;
+
+td button {
+    margin: 3px;
+    padding: 8px 12px;
 }
-h1{
-    font-weight: bold;
-    font-size: 50px;
-}ul{
-    font-weight: bold;
+
+td button:last-child {
+    background-color: #dc3545;
 }
+
+td button:last-child:hover {
+    background-color: #a71d2a;
+}
+
+
+/* ================================
+   BOXES
+================================ */
 
 .box {
-    height: 60px;
-    width: 60px;
-    color: black;
-    background-color: white;
-    border-radius: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    justify-content: center;
-    
-    
-
-}
-.box{
     height: 100px;
     width: 200px;
     color: black;
     background-color: white;
     border-radius: 30px;
-    justify-content: flex;
     font-size: 18px;
-    
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .boxes {
     display: flex;
     padding: 30px 50px;
     gap: 30px;
-    justify-content: center;   
+    justify-content: center;
+    flex-wrap: wrap;
 }
-@media (max-width:768px) {
+
+
+/* ================================
+   ANIMATION
+================================ */
+
+h1,
+h2,
+p,
+a,
+img,
+h3,
+ul,
+li,
+form,
+.main-nav,
+.c,
+button {
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
     body {
         margin: 0;
-        padding: 0;
+        padding: 10px;
         overflow-x: hidden;
-
-@media (max-width:700px) {
-    img {
-        max: width 90%;
-        height: auto;
-        margin: auto;
     }
-    .container {
-        width: 100%;
-        padding: 0 10px;
 
-    }
     h1 {
         font-size: 28px;
-
     }
-    h2{
-        font-size: 24px;
-    }
-    p {
-        font-size: 16;
 
     h2 {
         font-size: 24px;
     }
-    p{
+
+    p {
         font-size: 16px;
     }
-    .school-image {
-        max-width: 90%;
-        height: auto;
-        margin: auto;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-    .about-box  h3 {
-        max-width: 90%;
-        height: auto;
-        margin: auto;
-    }
 
-}
-/* mobile responsive images */
-@media (max-width:768px) {
     img {
         max-width: 100%;
         height: auto;
     }
-    
-}
 
-@media (max-width:768px) {
-    .about-box {
+    .container {
         width: 100%;
-        height: auto;
-        min-height: 0;
-        box-sizing: border-box;
-        padding: 20px;
-        overflow: visible;
+        padding: 0 10px;
     }
-    .about-box p ,
-    .about-box h2 ,
-    .about-box h3 ,{
-        overflow-wrap: break-word;
-        word-wrap: break-word;
+
+    .c {
+        padding: 20px 10px;
     }
+
+    .main-nav {
+        border-radius: 15px;
+        padding: 10px;
+    }
+
     .main-nav ul {
-        flex-direction: column;
-        gap: 25px;
-        padding: 25px 0px;
+        padding: 10px 0;
     }
-    .main-nav ul li{
-        margin: 0;
-    }
-    .main-nav ul li a {
+
+    .main-nav li {
         display: block;
-        padding: 8px 15px;
+        margin: 8px 0;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 10px 15px;
         font-size: 16px;
     }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 100%;
+        max-width: 450px;
+        min-height: 0;
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    #studentForm {
+        padding: 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
 }
-.student-form {
-    display: none;
-}    
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+}
+
+td {
+    color: black;
+}
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+/* Center Create Student and View Student */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Create Student Form */
+
+#studentForm {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* View Student Table */
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Center Heading */
+
+h1 {
+    text-align: center;
+}
+
+/* Center Back Home Link */
+
+body > a {
+    text-align: center;
+}
+#studentForm button {
+    display: block;
+    margin: 20px auto;
+}
+
+td button {
+    display: inline-block;
+    margin: 5px
+}
